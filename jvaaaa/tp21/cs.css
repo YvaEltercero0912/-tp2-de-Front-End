@@ -1,0 +1,95 @@
+/* Estilos Globales para el cuerpo del documento */
+body {
+    font-family: 'Circular Std', sans-serif; /* Define la fuente principal */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    height: 100vh; /* Establece la altura al 100% del viewport height */
+    justify-content: center; /* Alinea el contenido horizontalmente (se usa normalmente con flexbox) */
+    background-color: #080b0ce7; /* Color de fondo semi-transparente */
+    background-image: url(https://www.todofondos.net/wp-content/uploads/3840x2160-Papel-de-pantalla-4K-rojo-y-negro-4K-scaled.jpg); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir el cuerpo */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    background-color: #18181c; /* Color de fondo del contenedor */
+    border-bottom: 1px solid red; /* Borde inferior de 1 píxel sólido de color rojo */
+    padding-top: 1px; /* Relleno en la parte superior */
+}
+
+/* Estilos para los encabezados `<h1>` */
+h1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    color: #e6e6e6ab; /* Color del texto con transparencia */
+}
+
+/* Estilos para los párrafos `<p>` */
+p {
+    margin: 10px 0; /* Margen superior e inferior de 10 píxeles */
+    color: #e6e6e6ab; /* Color del texto con transparencia */
+}
+
+/* Estilos para los artículos con clase `.article` */
+div.article {
+    background-size: contain; /* Tamaño de fondo contenido */
+    background-color: #00000096; /* Color de fondo semi-transparente */
+    background-position: 30%; /* Posición del fondo */
+    width: 400px; /* Ancho del contenedor */
+    margin: 30px 0; /* Margen superior e inferior */
+    margin-left: 35%; /* Margen izquierdo */
+    padding: 10px; /* Relleno interno */
+    border-bottom: 2px solid red; /* Borde inferior de 2 píxeles sólido de color rojo */
+}
+
+/* Estilos para otros artículos con clases `.article2`, `.article3`, `.article4`, `.article5` */
+div.article2,
+div.article3,
+div.article4,
+div.article5 {
+    margin: 40px 0; /* Margen superior e inferior */
+    background-color: #18181c; /* Color de fondo del contenedor */
+    width: 180px; /* Ancho del contenedor */
+    margin-left: 2%; /* Margen izquierdo */
+    border-bottom: 2px solid red; /* Borde inferior de 2 píxeles sólido de color rojo */
+}
+
+/* Estilos específicos para `.article6` */
+div.article6 {
+    background-color: rgba(255, 255, 255, 0); /* Color de fondo transparente */
+    margin: 80px 0; /* Margen superior e inferior */
+    margin-right: 750; /* Margen derecho */
+    margin-left: 32%; /* Margen izquierdo */
+    height: 0%; /* Altura del elemento */
+    width: 42.56%; /* Ancho del elemento */
+}
+
+/* Estilos para los resultados del arreglo (elementos con clase `.resultados`) */
+.resultados {
+    font-weight: bold; /* Establece el peso de la fuente en negrita */
+}
+
+/* Estilos para los botones `<button>` */
+button {
+    color: #e6e6e6ab; /* Color del texto con transparencia */
+    background-color: rgb(255, 0, 0); /* Color de fondo rojo */
+    padding: 8px; /* Relleno interno */
+    font-family: 'Circular Std', sans-serif; /* Fuente del texto */
+    border: red; /* Borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transform: scale(0.95); /* Reducir ligeramente el tamaño al hacer clic */
+}
+
+/* Estilos adicionales para botones con clase `.boton` */
+button.boton {
+    background-color: red; /* Color de fondo rojo */
+    margin-left: 39%; /* Margen izquierdo */
+}
+
+/* Regla `@font-face` para incorporar la fuente 'Circular Std' desde archivos locales */
+@font-face {
+    font-family: 'Circular Std'; /* Nombre de la fuente */
+    src: url('/fuentes/circular-std-medium-500.ttf') format('woff2'), /* Formato WOFF2 para navegadores modernos */
+         url('/fuentes/circular-std-medium-500.ttf') format('woff'); /* Formato WOFF para compatibilidad */
+    font-weight: normal; /* Peso de la fuente */
+    font-style: normal; /* Estilo de la fuente */
+}

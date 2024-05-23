@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Definición de la codificación de caracteres del documento -->
+    <meta charset="UTF-8">
+    <!-- Título de la página, que aparece en la pestaña del navegador -->
+    <title>Formulario del Estudiante</title>
+    <!-- Vínculo a la hoja de estilos externa para el formato visual de la página -->
+    <link rel="stylesheet" href="tp2.css">
+</head>
+<body>
+    <!-- Formulario para recopilar datos del estudiante -->
+    <form id="studentForm">
+        <!-- Título del formulario -->
+        <h1>Datos Personales</h1>
+
+        <!-- Campo para el nombre del estudiante -->
+        <label for="firstName">Nombre:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <!-- Campo para el apellido del estudiante -->
+        <label for="lastName">Apellido:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <!-- Campo para el legajo del estudiante -->
+        <label for="studentId">Legajo:</label>
+        <input type="text" id="studentId" name="studentId" required>
+
+        <!-- Campo para el correo electrónico del estudiante -->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Sección para ingresar materias y notas -->
+        <h3>Materias y Notas</h3>
+        <div id="subjects">
+            <!-- Cada div representa un conjunto de campos para una materia y su nota -->
+            <div class="container1">
+                <label for="subject1">Materia 1:</label>
+                <input type="text" id="subject1" name="subject1" required>
+                <label for="grade1">Nota:</label>
+                <input type="number" id="grade1" name="grade1" required>
+            </div>
+
+            <!-- Repetición del bloque anterior para diferentes materias -->
+            <div class="container2">
+                <label for="subject2">Materia 2:</label>
+                <input type="text" id="subject2" name="subject2" required>
+                <label for="grade2">Nota:</label>
+                <input type="number" id="grade2" name="grade2" required>
+            </div>
+            <!-- Y así sucesivamente para más materias y notas -->
+            <div class="container3">
+                <label for="subject3">Materia 3:</label>
+                <input type="text" id="subject3" name="subject3" required>
+                <label for="grade3">Nota:</label>
+                <input type="number" id="grade3" name="grade3" required>
+            </div>
+
+            <div class="container4">
+                <label for="subject4">Materia 4:</label>
+                <input type="text" id="subject4" name="subject4" required>
+                <label for="grade4">Nota:</label>
+                <input type="number" id="grade4" name="grade4" required>
+            </div>
+
+            <div class="container5">
+                <label for="subject5">Materia 5:</label>
+                <input type="text" id="subject5" name="subject5" required>
+                <label for="grade5">Nota:</label>
+                <input type="number" id="grade5" name="grade5" required>
+            </div>
+        </div>
+
+        <!-- Botón para enviar el formulario, activando una función de JavaScript al hacer clic -->
+        <button type="button" onclick="validateAndCalculate()">Enviar</button>
+        <!-- Elemento para mostrar el promedio de las notas -->
+        <div id="averageDisplay">Promedio: <span id="averageResult"></span></div>
+        <!-- Contenedor para mensajes de error -->
+        <div id="errorMessages"></div>
+    </form>
+
+    <!-- Vínculo al archivo JavaScript que maneja la lógica del formulario -->
+    <script src="tp.js"></script>
+</body>
+</html>

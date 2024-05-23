@@ -1,0 +1,69 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con Arreglos - Resultados</title>
+    <link href="cs.css" rel="stylesheet"> <!-- Enlace al archivo de estilos CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> <!-- Enlace a una fuente de Google Fonts -->
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <header>
+                <h1>Trabajo Practico N°2</h1>
+            </header>
+        </div>
+    </header>
+    
+    <article>
+        <!-- Sección para crear el arreglo -->
+        <div class="article">
+            <p style="text-align: center;">Crear Arreglo: <span id="arreglo"></span></p>
+            <button class="boton" onclick="realizarOperacion('crear')">Crear Arreglo</button>
+        </div>
+    </article>   
+
+    <article>
+        <!-- Sección para mostrar la suma -->
+        <div class="article2">
+            <p>Suma: <span id="suma"></span></p>
+        </div>
+    </article>
+    
+    <article>
+        <!-- Sección para mostrar el promedio -->
+        <div class="article3">
+            <p>Promedio: <span id="promedio"></span></p>
+        </div>
+    </article>
+
+    <article>
+        <!-- Sección para mostrar el valor máximo -->
+        <div class="article4">
+            <p>Máximo: <span id="maximo"></span></p>
+        </div>
+    </article>
+
+    <article>
+        <!-- Sección para mostrar el valor mínimo -->
+        <div class="article5">
+            <p>Mínimo: <span id="minimo"></span></p>
+        </div>
+    </article>
+    
+    <!-- Sección para mostrar botones de operaciones sobre el arreglo -->
+    <article>
+        <div class="article6">
+            <button onclick="realizarOperacion('eliminar')">Eliminar Primer y Último</button>
+            <button onclick="realizarOperacion('agregar')">Agregar Nuevo Elemento</button>
+            <button onclick="realizarOperacion('ordenar')">Ordenar Arreglo</button>
+            <button onclick="realizarOperacion('invertir')">Invertir Arreglo</button>
+        </div>
+    </article>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="tp.js"></script>
+</body>
+</html>

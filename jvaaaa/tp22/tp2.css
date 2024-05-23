@@ -1,0 +1,139 @@
+/* Estilos generales */
+body {
+    font-family: 'Circular Std', sans-serif;
+
+    padding: 20px;
+    background-color: #f5f5f5;
+    height: 100vh; /* Establece la altura del cuerpo al 100% del viewport height */
+    justify-content: center;
+    
+    background-image: url(https://www.electronicauniversal.com.mx/wp-content/uploads/2019/07/774364.jpg);
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #4402f800;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(255, 253, 253, 0.1);
+    border-bottom: 2px solid red;
+
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    border-bottom: 2px solid red;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ccc;
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Circular Std', sans-serif;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #f7f6f6;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Circular Std', sans-serif;
+
+}
+
+button:hover {
+    background-color: #fa0202;
+}
+
+#averageDisplay {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#errorMessages {
+    margin-top: 20px;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Estilos específicos para los contenedores de materias y notas */
+.subject-container {
+    margin-bottom: 15px;
+}
+
+.subject-container label {
+    font-weight: normal;
+}
+
+.subject-container input[type="text"],
+.subject-container input[type="number"] {
+    width: calc(50% - 5px);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+h1 {
+    color: #ccc;
+    border-bottom: 2px solid red;
+
+    
+}
+
+div#averageDisplay {
+    color: white;
+}
+
+font-face {
+    font-family: 'Circular Std';
+    src: url('/fuentes/circular-std-medium-500.ttf') format('woff2'), /* Formato WOFF2 para navegadores modernos */
+         url('/fuentes/circular-std-medium-500.ttf') format('woff'); /* Formato WOFF para compatibilidad */
+    font-weight: normal;
+    font-style: normal;
+}
+
+#subjects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ajusta esto a 2 columnas */
+    gap: 20px; /* Espacio entre las columnas y filas */
+}
+
+.container1, .container2, .container3, .container4, .container5 {
+    display: flex;
+    flex-direction: column; /* Organiza los labels e inputs en columna */
+    gap: 10px; /* Espacio entre label e input */
+}
+
+#studentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre secciones del formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: auto; /* Centra el formulario */
+    padding: 20px; /* Padding alrededor del contenido del formulario */
+}
+
+button {
+    align-self: center; /* Centra el botón en el formulario */
+}
